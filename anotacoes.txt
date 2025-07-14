@@ -1,0 +1,38 @@
+a tag aside representa o menu lateral de uma página
+tag nav é utilizada para representar o menu de navagação
+
+.lista-links li:first-of-type a -> Pega o primeiro item com a classe lista-links li e estilaza a tag a dele
+
+Para inputs maiores é só usar a tag textarea
+
+<input type="file" id="image-upload" accept="image/" style="display: none" /> -> forma de criar um input que recebe arquivos de imagem
+
+dessa forma é chamado uma promise:
+new Promise((resolve, reject) =>{ -> resolve para retorno positovo e reject para erros
+        
+    })
+
+new FileReader() -> função base do JS para ler aquivos
+
+forma de utilizar o async await:
+inputUpload.addEventListener("change", async (evento) => {
+    const arquivo = evento.target.files[0]; // Pega o arquivo enviado no input
+
+    if (arquivo) {
+        try {
+            const conteudoDoArquivo = await lerConteudoArquivo(arquivo); 
+        } catch (error) {
+            
+        }
+    }
+});
+
+forma de mudar o arquivo de iamgem = imagemPrincipal.src = conteudoDoArquivo.url;
+
+inputTags.addEventListener("keypress", (evento) => { })-> verifica se as teclas do teclado são pressioandas
+
+Criando uma lista em JS vindo da lista do html:
+    const tagsProjeto = Array.from(listaTags.querySelectorAll("p")).map((tag) => tag.textContent);
+
+forma de criar função async:
+async function publicarProjeto()
